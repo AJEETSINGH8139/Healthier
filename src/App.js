@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+import Home from './Home';
+import Input from './Input';
 import './App.css';
 
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { useState } from 'react';
+
 function App() {
+  const [age, setAge] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <nav>
+        <Link className='nav-buttons' to="#">Logo</Link>
+        <Link className='nav-buttons' to="#">Home</Link>
+        <Link className='nav-buttons' to="#">About</Link>
+        <Link className='nav-buttons' to="#">Contact Us</Link>
+      </nav>
+      
+      <Routes>
+    
+        <Route exact path="/" element={<Input callback = {setAge}/>} />
+
+        <Route exact path="/home" element={<Home age = {age} />} />
+ 
+      </Routes>
+
+    </Router> 
+      
     </div>
   );
 }

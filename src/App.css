@@ -1,8 +1,107 @@
-.App {
+body{
+  background-color: lightcyan;
+  
+}
+/* .App {
+  text-align: center;
+  
+} */
+
+nav{
+  /* position: fixed; */
+  width: 100%;
+  height: 50px;
+  background-color: darkslategray;
+  color: whitesmoke;
   text-align: center;
 }
 
-.App-logo {
+.nav-buttons{
+  width: 10%;
+  height: 30px;
+  margin: 0px 30px;
+  margin-top: 3px;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px;
+  color: whitesmoke;
+  border-radius: 5px;
+  
+}
+
+.nav-buttons:hover{
+  background-color: green;
+}
+.input-age{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  margin: 10px;
+}
+
+.buttons{
+  width: 10%;
+  height: 35px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: darkgreen;
+  color: whitesmoke;
+  border-radius: 5px;
+  
+}
+
+.buttons:hover{
+  background-color: green;
+}
+
+
+img{
+  margin-top: 70px;
+  margin-left: 270px;
+  width: 65%;
+  border-radius: 3%;
+}
+
+.content{
+  width: 80%;
+  margin-left: 150px;
+  background-color: white;
+  box-sizing: border-box;
+  text-align: justify;
+  box-shadow: 4px;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: darkslategray;
+  color: whitesmoke;
+  text-align: center;
+  
+}
+p{
+  margin: 30px 50px;
+}
+
+h3{
+  margin: 30px 50px;
+}
+
+h2{
+  margin: 30px 50px;
+}
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +134,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
